@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proppay</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-white">
+        <!-- Header -->
+        <header class="absolute inset-x-0 top-0 z-50">
+          <nav class="flex items-center justify-between p-6 lg:px-8 border-b-2 border-b-black-900" aria-label="Global">
+            <div class="flex lg:flex-1 border-b-black">
+              <a href="index.html" class="-m-1.5 p-1.5">
+                <span class="sr-only">Proppay</span>
+                <img class="h-8 w-auto" src="../logo.png" alt="">
+              </a>
+              <a><span class="-m-1.5 p-4 font-bold text-base">PropPay</span></a>
+            </div>
+            <!---->
+            <div class="flex lg:hidden">
+              <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Open main menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </button>
+            </div>
+            <div class="lg:flex lg:gap-x-12 lg:justify-start">
+              <a href="#" class="text-sm/6 text-gray-900">ขายฝากอสังหาฯ</a>
+              <a href="investor.html" class="text-sm/6  text-gray-900">ลงทุนกับเรา</a>
+              <a href="#" class="text-sm/6  text-gray-900">รู้จักพร็อพเพย์</a>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" class="text-sm/6 text-gray-900 pr-5">ติดต่อพร็อพเพย์</a>
+              <a href="https://proppay-website.vercel.app/signin"text-sm/6 font-semibold text-gray-900"><button type="button" class="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm">เข้าสู่ระบบ</button></a>
+            </div>
+          </nav>
+          <!-- Mobile menu, show/hide based on menu open state. -->
+          <div class="lg:hidden" role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-50"></div>
+            <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+              <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                  <span class="sr-only">Your Company</span>
+                  <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                </a>
+                <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                  <span class="sr-only">Close menu</span>
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                  <div class="space-y-2 py-6">
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+                  </div>
+                  <div class="py-6">
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      
+        <main class="isolate">
+          <!-- Hero section -->
+          <div class="relative pt-14">
+            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+              <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+            </div>
+            <div class="py-24 sm:py-32 lg:pb-40">
+              <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="max-w-2xl">
+                  <h1 class="text-balance text-10xl font-semibold tracking-tight text-gray-900 sm:text-7xl">ขายฝากเป็นเรื่องง่าย<span class="text-amber-400">ด้วยพร็อพเพย์</span></h1>
+                  <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 mt-6">ตรวจสอบราคาและข้อเสนอเบื้องต้น ไม่ว่าจะขายฝากด่วน หรือต้องการผู้ช่วย เพื่อเตรียมความพร้อม ส่งรายละเอียดหาเราได้เลย</p>
+                  <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+                    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                      <div class="relative pl-16">
+                        <dt class="text-base/7 font-bold text-gray-900">
+                          <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-200">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 1024 1024"><path fill="currentColor" d="M848 359.3H627.7L825.8 109c4.1-5.3.4-13-6.3-13H436c-2.8 0-5.5 1.5-6.9 4L170 547.5c-3.1 5.3.7 12 6.9 12h174.4l-89.4 357.6c-1.9 7.8 7.5 13.3 13.3 7.7L853.5 373c5.2-4.9 1.7-13.7-5.5-13.7M378.2 732.5l60.3-241H281.1l189.6-327.4h224.6L487 427.4h211z"/></svg>
+                          </div>
+                          อนุมัติเร็วทันใจ
+                        </dt>
+                        <dd class="mt-2 text-base/7 text-gray-600">อนุมัติเงินไวภายใน 24 ชม. ไม่ยุ่งยาก ได้เงินไว ติดต่อไถ่ถอนง่าย</dd>
+                      </div>
+                      <div class="relative pl-16">
+                        <dt class="text-base/7 font-semibold text-gray-900">
+                          <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M1.469 6.47a.75.75 0 0 1 1.06-.001l3.919 3.902c.514.511.847.84 1.124 1.052c.26.197.382.22.462.22s.203-.022.463-.22c.278-.21.61-.54 1.125-1.051l.274-.273c.47-.466.873-.868 1.24-1.146c.394-.299.83-.525 1.369-.525c.538 0 .975.226 1.369.524c.367.279.771.68 1.24 1.147l6.136 6.098v-3.743a.75.75 0 0 1 1.5 0V18a.75.75 0 0 1-.75.75h-5.582a.75.75 0 1 1 0-1.5h3.764l-6.09-6.053c-.514-.51-.847-.84-1.125-1.05c-.26-.197-.381-.219-.462-.219c-.08 0-.202.022-.462.22c-.277.21-.61.539-1.124 1.05l-.274.272c-.47.467-.874.87-1.241 1.148c-.394.299-.831.525-1.37.525s-.976-.227-1.37-.526c-.367-.279-.77-.682-1.24-1.149l-.035-.034L1.471 7.53a.75.75 0 0 1-.002-1.06" clip-rule="evenodd"/></svg>
+                          </div>
+                          อัตราหนี้ต่ำ
+                        </dt>
+                        <dd class="mt-2 text-base/7 text-gray-600">อัตราเริ่มต้นเพียง 0.75% ต่อเดือน ช่วยประหยัดและมีโอกาสในการปิดหนี้ได้</dd>
+                      </div>
+                      <div class="relative pl-16">
+                        <dt class="text-base/7 font-semibold text-gray-900">
+                          <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15.686 15A14.5 14.5 0 0 1 12 22a14.5 14.5 0 0 1 0-20a10 10 0 1 0 9.542 13M2 12h8.5M20 6V4a2 2 0 1 0-4 0v2"/><rect width="8" height="5" x="14" y="6" rx="1"/></g></svg>
+                          </div>
+                          ความเป็นส่วนตัวสูง
+                        </dt>
+                        <dd class="mt-2 text-base/7 text-gray-600">ใส่ใจความเป็นส่วนตัว ทุกข้อมูลของผู้ขายฝากเป็นความลับ</dd>
+                      </div>
+                      <div class="relative pl-16">
+                        <dt class="text-base/7 font-semibold text-gray-900">
+                          <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.5 17.5L22 22m-2-11a9 9 0 1 0-18 0a9 9 0 0 0 18 0M8 14l6-6M8 8l6 6" color="currentColor"/></svg>
+                          </div>
+                          ไม่เช็คประวัติ
+                        </dt>
+                        <dd class="mt-2 text-base/7 text-gray-600">ไม่เช็คเครดิตบูโรและประวัติการเงิน ไม่จำเป็นต้องใช้คนค้ำประกัน</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+              <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+            </div> -->
+          </div>    
+
+          <!-- FAQS -->
+          <div class="bg-white">
+            <div class="mx-auto mt-3 max-w-7xl px-6 sm:mt-56 lg:px-8">
+              <div class="mx-auto max-w-2xl lg:text-center">
+                <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">คำถามขายฝากที่พบบ่อย</p>
+                <p class="mt-6 text-pretty text-lg/8 text-gray-600">ทุกเรื่องที่คุณอยากรู้เกี่ยวกับการขายฝาก</p>
+              </div>
+              <div class="pt-6">
+                <dt>
+                  <!-- Expand/collapse question button -->
+                  <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                    <span class="text-base/7 font-semibold">ขายฝากคืออะไร?</span>
+                    <span class="ml-6 flex h-7 items-center">
+                      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd class="mt-2 pr-12" id="faq-0">
+                  <p class="text-base/7 text-gray-600">ขายฝาก คือ สัญญาซื้อขายซึ่งกรรมสิทธิ์ในทรัพย์สินตกไปยังผู้ซื้อ โดยมีข้อตกลงกันว่าผู้ขายอาจไถ่ทรัพย์นั้นคืนได้ โดยราคาซื้อคืนมักรวมดอกเบี้ยเข้าไปแล้ว</p>
+                </dd>
+              </div>
+              <div class="pt-6">
+                <dt>
+                  <!-- Expand/collapse question button -->
+                  <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                    <span class="text-base/7 font-semibold">ต้องมีเอกสารรายได้มาแสดงหรือเช็คเครดิตบูโร่หรือไม่</span>
+                    <span class="ml-6 flex h-7 items-center">
+                      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd class="mt-2 pr-12" id="faq-0">
+                  <p class="text-base/7 text-gray-600">พร็อพเพย์ (PropPay) พิจารณาจากทรัพย์ที่เป็นหลักประกันแต่เพียงอย่างเดียวและจะไม่ขอดูประวัติการชำระหนี้และเอกสารแสดงรายได้ใด</p>
+                </dd>
+              </div>
+              <div class="pt-6">
+                <dt>
+                  <!-- Expand/collapse question button -->
+                  <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                    <span class="text-base/7 font-semibold">ผู้กู้จะได้วงเงินกู้เท่าไหร่ของราคาประเมิน</span>
+                    <span class="ml-6 flex h-7 items-center">
+                      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd class="mt-2 pr-12" id="faq-0">
+                  <p class="text-base/7 text-gray-600">เนื่องจากดอกเบี้ยของการกู้ยืมที่ผ่านระบบพร็อพเพย์ (PropPay) มีราคาต่ำกว่านายทุนนอกระบบส่วนใหญ่ เราจึงต้องมีมาตรการจำกัดวงเงินกู้ เพื่อป้องกันความเสี่ยงให้นักลงทุนควบคู่ไปด้วยโดยเริ่ม 45-50% ของราคาประเมิน แต่ไม่เกิน 65%</p>
+                </dd>
+              </div>
+              <div class="pt-6">
+                <dt>
+                  <!-- Expand/collapse question button -->
+                  <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                    <span class="text-base/7 font-semibold">เวลาไถ่ขายฝาก สูงสุดกี่ปี</span>
+                    <span class="ml-6 flex h-7 items-center">
+                      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd class="mt-2 pr-12" id="faq-0">
+                  <p class="text-base/7 text-gray-600">ระยะเวลาไถ่ขายฝากจะต้องจดทะเบียนไว้ที่โฉนด ณ กรมที่ดิน กำหนดไว้ 1 ปีขึ้นไป แต่ไม่เกิน 10 ปี ต้องของไถ่ถอนภายในกำหนดเวลาสัญญาขายฝาก หรือภายในเวลาที่กำหนด การทำข้อตกลงขยายระยะเวลาไถ่ขายฝากจะต้องทำเป็นหนังสือจดทะเบียนต่อเจ้าพนักงาน</p>
+                </dd>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial section -->
+          <div class="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
+            <div class="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20">
+              <img class="absolute inset-0 h-full w-full object-cover brightness-150 saturate-0" src="https://images.unsplash.com/photo-1601381718415-a05fb0a261f3?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8ODl8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1216&q=80" alt="">
+              <div class="absolute inset-0 bg-gray-900/90 mix-blend-multiply"></div>
+              <div class="absolute -left-80 -top-56 transform-gpu blur-3xl" aria-hidden="true">
+                <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-[0.45]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+              </div>
+              <div class="hidden md:absolute md:bottom-16 md:left-[50rem] md:block md:transform-gpu md:blur-3xl" aria-hidden="true">
+                <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-25" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+              </div>
+              <div class="relative mx-auto max-w-2xl lg:mx-0">
+                <img class="h-12 w-auto" src="https://tailwindui.com/plus/img/logos/workcation-logo-white.svg" alt="">
+                <figure>
+                  <blockquote class="mt-6 text-lg font-semibold text-white sm:text-xl/8">
+                    <p>“Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu praesent at a. Ornare arcu gravida natoque erat et cursus tortor consequat at. Vulputate gravida sociis enim nullam ultricies habitant malesuada lorem ac.”</p>
+                  </blockquote>
+                  <figcaption class="mt-6 text-base text-white">
+                    <div class="font-semibold">Judith Black</div>
+                    <div class="mt-1">CEO of Tuple</div>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Pricing section -->
+          <div class="py-24 sm:pt-48">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <div class="mx-auto max-w-2xl lg:text-center">
+                <h2 class="text-base/7 font-semibold text-indigo-600">Pricing</h2>
+                <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">Pricing that grows with you</p>
+                <p class="mt-6 text-pretty text-lg/8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
+              </div>
+              <div class="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <div class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 lg:mt-8 lg:rounded-r-none xl:p-10">
+                  <div>
+                    <div class="flex items-center justify-between gap-x-4">
+                      <h3 id="tier-freelancer" class="text-lg/8 font-semibold text-gray-900">Freelancer</h3>
+                    </div>
+                    <p class="mt-4 text-sm/6 text-gray-600">The essentials to provide your best work for clients.</p>
+                    <p class="mt-6 flex items-baseline gap-x-1">
+                      <span class="text-4xl font-semibold tracking-tight text-gray-900">$19</span>
+                      <span class="text-sm/6 font-semibold text-gray-600">/month</span>
+                    </p>
+                    <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-600">
+                      <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                        </svg>
+                        5 products
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                        </svg>
+                        Up to 1,000 subscribers
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                        </svg>
+                        Basic analytics
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                        </svg>
+                        48-hour support response time
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#" aria-describedby="tier-freelancer" class="mt-8 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+                </div>
+                <div class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 lg:z-10 lg:rounded-b-none xl:p-10">
+                  <div>
+                    <div class="flex items-center justify-between gap-x-4">
+                      <h3 id="tier-startup" class="text-lg/8 font-semibold text-indigo-600">Startup</h3>
+                      <p class="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs/5 font-semibold text-indigo-600">Most popular</p>
+                    </div>
+                    <p class="mt-4 text-sm/6 text-gray-600">A plan that scales with your rapidly growing business.</p>
+                    <p class="mt-6 flex items-baseline gap-x-1">
+                      <span class="text-4xl font-semibold tracking-tight text-gray-900">$49</span>
+                      <span class="text-sm/6 font-semibold text-gray-600">/month</span>
+                    </p>
+                    <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-600">
+                      <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                        </svg>
+                        25 products
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                        </svg>
+                        Up to 10,000 subscribers
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                        </svg>
+                        Advanced analytics
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                        </svg>
+                        24-hour support response time
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                        </svg>
+                        Marketing automations
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#" aria-describedby="tier-startup" class="mt-8 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+                </div>
+                <div class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 lg:mt-8 lg:rounded-l-none xl:p-10">
+                  <div>
+                    <div class="flex items-center justify-between gap-x-4">
+                      <h3 id="tier-enterprise" class="text-lg/8 font-semibold text-gray-900">Enterprise</h3>
+                    </div>
+                    <p class="mt-4 text-sm/6 text-gray-600">Dedicated support and infrastructure for your company.</p>
+                    <p class="mt-6 flex items-baseline gap-x-1">
+                      <span class="text-4xl font-semibold tracking-tight text-gray-900">$99</span>
+                      <span class="text-sm/6 font-semibold text-gray-600">/month</span>
+                    </p>
+                    <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-600">
+                      <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                        </svg>
+                        Unlimited products
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                        </svg>
+                        Unlimited subscribers
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                        </svg>
+                        Advanced analytics
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                        </svg>
+                        1-hour, dedicated support response time
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                        </svg>
+                        Marketing automations
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#" aria-describedby="tier-enterprise" class="mt-8 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- FAQs -->
+          <div class="mx-auto max-w-2xl divide-y divide-gray-900/10 px-6 pb-8 sm:pb-24 sm:pt-12 lg:max-w-7xl lg:px-8 lg:pb-32">
+            <h2 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Frequently asked questions</h2>
+            <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
+              <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+                <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What&#039;s the best thing about Switzerland?</dt>
+                <dd class="mt-4 lg:col-span-7 lg:mt-0">
+                  <p class="text-base/7 text-gray-600">I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</p>
+                </dd>
+              </div>
+      
+              <!-- More questions... -->
+            </dl>
+          </div>
+      
+          <!-- CTA section -->
+
+        </main>
+
+<!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<footer class="bg-white">
+  <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+      <img class="h-9" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="Company name">
+      <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm/6 font-semibold text-gray-900">Solutions</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Marketing</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Analytics</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Automation</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Commerce</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Insights</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-10 md:mt-0">
+            <h3 class="text-sm/6 font-semibold text-gray-900">Support</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Submit ticket</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Documentation</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Guides</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm/6 font-semibold text-gray-900">Company</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">About</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Jobs</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Press</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-10 md:mt-0">
+            <h3 class="text-sm/6 font-semibold text-gray-900">Legal</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Terms of service</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Privacy policy</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">License</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col justify-between gap-5 border-b pb-10 lg:flex-row lg:pb-16">
+      <div class="flex lg:flex-1 border-b-black">
+        <a href="index.html" class="-m-1.5 p-1.5">
+          <span class="sr-only">Proppay</span>
+          <img class="h-8 w-auto" src="../logo.png" alt="">
+        </a>
+        <a><span class="-m-1.5 p-4 font-bold text-base">PropPay</span></a>
+      </div>
+      <ul class="mt-5 flex flex-auto pl-20">
+        <li><a href="/privacy-policy" class="hover:text-primary">นโยบายความเป็นส่วนตัว</a></li>
+        <li><a href="/cookie-policy" class="hover:text-primary">นโยบายการใช้คุกกี้</a></li>
+        <li><a href="/terms-and-conditions" class="hover:text-primary">เงื่อนไขการใช้งาน</a></li>
+      </ul>
+
+      <!-- icon at footage -->
+      <div class="flex items-center gap-8">
+        <a href="#" class="text-gray-600 hover:text-gray-800">
+          <span class="sr-only">Facebook</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 256 256"><path fill="#1877f2" d="M256 128C256 57.308 198.692 0 128 0S0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#fff" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A129 129 0 0 0 128 256a129 129 0 0 0 20-1.555V165z"/></svg>  
+        </a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">
+          <span class="sr-only">TikTok</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 256 290"><path fill="#ff004f" d="M189.72 104.421c18.678 13.345 41.56 21.197 66.273 21.197v-47.53a67 67 0 0 1-13.918-1.456v37.413c-24.711 0-47.59-7.851-66.272-21.195v96.996c0 48.523-39.356 87.855-87.9 87.855c-18.113 0-34.949-5.473-48.934-14.86c15.962 16.313 38.222 26.432 62.848 26.432c48.548 0 87.905-39.332 87.905-87.857v-96.995zm17.17-47.952c-9.546-10.423-15.814-23.893-17.17-38.785v-6.113h-13.189c3.32 18.927 14.644 35.097 30.358 44.898M69.673 225.607a40 40 0 0 1-8.203-24.33c0-22.192 18.001-40.186 40.21-40.186a40.3 40.3 0 0 1 12.197 1.883v-48.593c-4.61-.631-9.262-.9-13.912-.801v37.822a40.3 40.3 0 0 0-12.203-1.882c-22.208 0-40.208 17.992-40.208 40.187c0 15.694 8.997 29.281 22.119 35.9"/><path d="M175.803 92.849c18.683 13.344 41.56 21.195 66.272 21.195V76.631c-13.794-2.937-26.005-10.141-35.186-20.162c-15.715-9.802-27.038-25.972-30.358-44.898h-34.643v189.843c-.079 22.132-18.049 40.052-40.21 40.052c-13.058 0-24.66-6.221-32.007-15.86c-13.12-6.618-22.118-20.206-22.118-35.898c0-22.193 18-40.187 40.208-40.187c4.255 0 8.356.662 12.203 1.882v-37.822c-47.692.985-86.047 39.933-86.047 87.834c0 23.912 9.551 45.589 25.053 61.428c13.985 9.385 30.82 14.86 48.934 14.86c48.545 0 87.9-39.335 87.9-87.857z"/><path fill="#00f2ea" d="M242.075 76.63V66.516a66.3 66.3 0 0 1-35.186-10.047a66.47 66.47 0 0 0 35.186 20.163M176.53 11.57a68 68 0 0 1-.728-5.457V0h-47.834v189.845c-.076 22.13-18.046 40.05-40.208 40.05a40.06 40.06 0 0 1-18.09-4.287c7.347 9.637 18.949 15.857 32.007 15.857c22.16 0 40.132-17.918 40.21-40.05V11.571zM99.966 113.58v-10.769a89 89 0 0 0-12.061-.818C39.355 101.993 0 141.327 0 189.845c0 30.419 15.467 57.227 38.971 72.996c-15.502-15.838-25.053-37.516-25.053-61.427c0-47.9 38.354-86.848 86.048-87.833"/></svg>
+        </a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">
+          <span class="sr-only">Youtube</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 256 180"><path fill="#f00" d="M250.346 28.075A32.18 32.18 0 0 0 227.69 5.418C207.824 0 127.87 0 127.87 0S47.912.164 28.046 5.582A32.18 32.18 0 0 0 5.39 28.24c-6.009 35.298-8.34 89.084.165 122.97a32.18 32.18 0 0 0 22.656 22.657c19.866 5.418 99.822 5.418 99.822 5.418s79.955 0 99.82-5.418a32.18 32.18 0 0 0 22.657-22.657c6.338-35.348 8.291-89.1-.164-123.134"/><path fill="#fff" d="m102.421 128.06l66.328-38.418l-66.328-38.418z"/></svg>
+        </a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">
+          <span class="sr-only">GitHub</span>
+          <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+          </svg>
+        </a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">
+          <span class="sr-only">YouTube</span>
+          <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
+      <p class="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0">&copy; 2024 PropPay. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+      </div>
+      
+</body>
+</html>
